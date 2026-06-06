@@ -2,7 +2,6 @@ A = input()
 
 result = A[0]
 count = 1
-word = A[0]
 
 # Please write your code here.
 for i in range(1, len(A)):
