@@ -7,6 +7,6 @@ def Sum(mul):
     if mul < 10:
         return mul
     
-    return Sum(mul//10) + Sum(mul%10)
+    return Sum(mul//10) + mul%10
 
 print(Sum(mul))
