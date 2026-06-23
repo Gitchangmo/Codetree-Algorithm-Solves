@@ -3,9 +3,10 @@ nums = list(map(int, input().split()))
 
 # Please write your code here.
 nums.sort()
-arr = []
+max_num = 0
 
 for i in range(n):
-    arr.append(nums[i] + nums[-(i+1)])
+    if max_num < nums[i] + nums[-(i+1)]:
+        max_num = nums[i] + nums[-(i+1)]
 
-print(max(arr))
+print(max_num)
